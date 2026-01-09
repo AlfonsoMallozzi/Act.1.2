@@ -1,0 +1,41 @@
+#include "MathOps.h"
+#include <vector>
+
+// Helper function for recursive sum (internal use only)
+long long sumaRecursivaHelper(int n, const std::vector<int> &numeros) {
+  if (n <= 0)
+    return 0;
+  return numeros[n - 1] + sumaRecursivaHelper(n - 1, numeros);
+}
+
+// EJERCICIO 1
+long long fibonacciIterativo(int n) {
+  // TODO: Implementar
+  return 0;
+}
+
+// EJERCICIO 2
+
+long long fibonacciRecursivo(int n) {
+  // TODO: Implementar
+  return 0;
+}
+
+// EJERCICIO 3
+
+double promedioIterativo(int n, const std::vector<int> &numeros) {
+  // TODO: Implementar
+  return 0.0;
+}
+
+// EJERCICIO 4
+double promedioRecursivo(int n, const std::vector<int> &numeros) {
+  if (n <= 0 || numeros.empty())
+    return 0.0;
+
+  // Es un Safecase en caso que se pase un vector de menor tamaño que n.
+  int effectiveN = (n > (int)numeros.size()) ? (int)numeros.size() : n;
+
+  long long sum = sumaRecursivaHelper(effectiveN, numeros);
+  return (double)sum / effectiveN;
+}
