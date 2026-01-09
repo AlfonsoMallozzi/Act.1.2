@@ -1,3 +1,10 @@
+/**
+ * Compilar:
+ *   g++ -std=c++17 -Wall -o math_app *.cpp
+ *
+ * Ejecutar:
+ *   ./math_app
+ **/
 #include "MathOps.h"
 #include <iomanip>
 #include <iostream>
@@ -27,3 +34,4 @@ int main() {
 
   return 0;
 }
+
