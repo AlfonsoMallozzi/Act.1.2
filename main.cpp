@@ -31,7 +31,14 @@ int main() {
 
   // Recursivo (Debe funcionar)
   std::cout << "Promedio Recursivo: " << promedioRecursivo(n, vec) << std::endl;
+  std::vector<int> vec2 = {51, 35, 140, 323, 566, 1600, 231, 99, 1662};
+  int n2 = vec2.size();
+
+  std::cout << "Promedio Iterativo vec2: " << promedioIterativo(n2, vec2) << std::endl;
+  std::cout << "Promedio Recursivo vec2: " << promedioRecursivo(n2, vec2) << std::endl;
+
 
   return 0;
 }
+
 
