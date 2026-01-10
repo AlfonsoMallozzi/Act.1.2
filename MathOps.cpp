@@ -28,13 +28,17 @@ long long fibonacciIterativo(int n) {
   return b;
 }
 
-
 // EJERCICIO 2
 
 long long fibonacciRecursivo(int n) {
-  // TODO: Implementar
-  return 0;
+  if (n <= 0)
+    return 0;
+  if (n == 1 || n == 2)
+    return 1;
+
+  return fibonacciRecursivo(n - 1) + fibonacciRecursivo(n - 2);
 }
+
 
 // EJERCICIO 3
 
@@ -60,5 +64,6 @@ double promedioRecursivo(int n, const std::vector<int> &numeros) {
   long long sum = sumaRecursivaHelper(effectiveN, numeros);
   return (double)sum / effectiveN;
 }
+
 
 
