@@ -26,7 +26,7 @@ int main() {
   std::vector<int> vec = {1, 5, 10, 23, 56, 100};
   int n = vec.size();
 
-  // Iterativo (Pendiente)
+  // Iterativo 
   std::cout << "Promedio Iterativo: " << promedioIterativo(n, vec) << std::endl;
 
   // Recursivo (Debe funcionar)
@@ -40,5 +40,6 @@ int main() {
 
   return 0;
 }
+
 
 
