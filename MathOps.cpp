@@ -8,7 +8,7 @@ long long sumaRecursivaHelper(int n, const std::vector<int> &numeros) {
   return numeros[n - 1] + sumaRecursivaHelper(n - 1, numeros);
 }
 
-// EJERCICIO 1
+// EJERCICIO 1 - Complejidad: O(n) tiempo, O(1) 
 long long fibonacciIterativo(int n) {
   if (n <= 0)
     return 0;
@@ -28,7 +28,7 @@ long long fibonacciIterativo(int n) {
   return b;
 }
 
-// EJERCICIO 2
+// EJERCICIO 2 - - Complejidad: O(2^n) tiempo, O(n) 
 
 long long fibonacciRecursivo(int n) {
   if (n <= 0)
@@ -68,6 +68,7 @@ double promedioRecursivo(int n, const std::vector<int> &numeros) {
   long long sum = sumaRecursivaHelper(effectiveN, numeros);
   return (double)sum / effectiveN;
 }
+
 
 
 
